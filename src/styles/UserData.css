@@ -1,0 +1,75 @@
+.user-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    position: relative;
+    align-self: center;
+}
+
+.emoji {
+    position: absolute;
+    top: -3px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+}
+
+.user-img img {
+    display: block;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+
+.light .user-img img{
+    filter: unset;
+}
+
+.user-name {
+    font-size: 20px;
+    color: var(--text-color-dark1);
+    text-align: center;
+    margin: 4px 0;
+    font-style: normal;
+    font-weight: 500;
+    line-height: calc(1em + 2px);
+    padding: 0 4px;
+}
+
+body.light .user-name {
+    color: var(--text-color-light1);
+}
+
+.user-text {
+    font-size: 17px;
+    color: var(--text-color-dark2);
+    text-align: center;
+}
+
+body.light .user-text {
+    color: var(--text-color-light2);
+}
+
+@media (max-width: 700px) {
+    .user-name {
+        font-size: 16px;
+    }
+
+    .user-text {
+        font-size: 14px;
+    }
+
+    .user-img {
+        margin-bottom: 6px;
+    }
+}

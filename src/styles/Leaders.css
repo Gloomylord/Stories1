@@ -1,0 +1,193 @@
+.leaders-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.leaders {
+    display: grid;
+    align-items: flex-end;
+    justify-self: flex-end;
+    justify-content: center;
+    height: 100%;
+}
+
+.leaders-column {
+    height: calc(var(--height) * 100%);
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.leaders-column:nth-child(2n) {
+    margin: 0 0 0 -16px;
+}
+
+.leaders-column:nth-child(2n) .user-data, .leaders-column:nth-child(2n) .user-place {
+    padding: 0 0 0 16px;
+}
+
+.leaders-column:nth-child(2n + 1) {
+    margin: 0 -16px 0 0;
+}
+
+.leaders-column:nth-child(2n + 1) .user-data, .leaders-column:nth-child(2n + 1) .user-place {
+    padding: 0 16px 0 0;
+}
+
+.leaders-column:first-child {
+    margin: 0;
+}
+
+.leaders-column:first-child .user-data, .leaders-column:first-child .user-place {
+    padding: 0;
+}
+
+.user-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 5px 5px 0 0;
+    flex-grow: 1;
+    min-height: 50px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) -2.22%, rgba(0, 0, 0, 0.8) 100%),
+    radial-gradient(149.08% 95.38% at 38.75% 71.48%, #000000 0%, #231900 0.01%, #4D4D4D 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.2), inset 2px 2px 16px rgba(103, 103, 103, 0.6);
+    margin: 23px 0 0;
+}
+
+body.light .user-column {
+    background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(207, 207, 207, 0.5);
+}
+
+.user-place {
+    color: var(--text-color-dark1);
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 18px;
+    margin-bottom: auto;
+    text-align: center;
+}
+
+body.light .user-place {
+    color: var(--text-color-light1);
+}
+
+.leaders-column-top .user-column {
+    background: radial-gradient(91.67% 122.17% at 50.17% -11.17%, #FFA300 0%, #2D1C00 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.4), inset 0 6px 15px rgba(255, 162, 0, 0.4);
+}
+
+body.light .leaders-column-top .user-column {
+    background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(255, 176, 57, 0.8);
+}
+
+.user-column > * {
+    z-index: 5;
+}
+
+.user-column .user-text {
+    color: var(--text-color-dark1);
+}
+
+body.light .user-column .user-text {
+    color: var(--text-color-light1);
+}
+
+.selected-user-place {
+    padding-top: 10px;
+    width: 100%;
+    margin: 10px 0 30px;
+    color: var(--text-color-dark1);
+    font-size: 25px;
+    text-align: center;
+    border-top: 2px solid #918f8a;
+}
+
+body.light .selected-user-place {
+    color: var(--text-color-light1);
+}
+
+.selected-user-on-top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (orientation: landscape) {
+
+    .selected-user-on-top {
+        display: none;
+    }
+
+    .leaders-column {
+        height: calc((1 - var(--i) * 0.05) * 100% * .9);
+    }
+
+    .leaders {
+        grid-template-columns: repeat(5, 1fr);
+        padding: 40px 120px 0;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 700px) {
+    .leaders {
+        padding: 26px 66px 0;
+    }
+}
+
+@media (max-width: 600px) and (orientation: landscape) {
+    .leaders {
+        padding: 20px 24px 0;
+    }
+
+    .chart_title.title {
+        padding: 20px 24px 10px;
+    }
+}
+
+@media (orientation: portrait) {
+    .leaders {
+        grid-template-columns: repeat(3, 1fr);
+        padding: 40px 58px 0;
+    }
+
+    .leaders-column {
+        height: calc((1 - var(--i) * 0.1) * 100% * .9);
+    }
+
+    .leaders > :nth-last-child(1), .leaders > :nth-last-child(2) {
+        display: none;
+    }
+}
+
+@media (max-width: 700px) and (orientation: portrait) {
+    .leaders {
+        padding: 50px 24px 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .user-column {
+        border-radius: 5px 5px 0 0;
+        box-shadow: inset 0 5px 25px rgba(255, 255, 255, .2);
+        margin: 15px 0 0;
+    }
+
+    .user-place {
+        color: var(--text-color-dark1);
+        font-size: 18px;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .selected-user-place {
+        font-size: 18px;
+        margin: 10px 0 10px;
+    }
+}

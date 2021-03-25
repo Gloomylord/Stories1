@@ -1,0 +1,319 @@
+.chart-page {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.chart {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    flex-grow: 2;
+    padding: 0 58px;
+    position: relative;
+}
+
+.chart-container {
+    display: flex;
+    min-width: 100%;
+    height: 100%;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 0 58px;
+    position: absolute;
+    right: 0;
+}
+
+.chart-container > :last-child {
+    margin: 10px 0 0;
+}
+
+.chart-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    height: calc(var(--height) * 100% * .7 + 27px);
+    min-height: 50px;
+    min-width: 50px;
+    align-self: flex-end;
+    margin: 0 auto 0 0;
+}
+
+.chart_title {
+    padding: 30px 24px 19px 24px;
+}
+
+.chart_subtitle {
+    padding: 0 24px;
+}
+
+.chart-column-title {
+    color: var(--text-color-dark2);
+    margin-bottom: 7px;
+    font-size: 20px;
+}
+
+body.light .chart-column-title {
+    color: var(--text-color-light2);
+}
+
+.chart-column-item {
+    flex-grow: 2;
+    min-height: 15px;
+    width: 100%;
+    border-radius: 6px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 93.3% at 38.75% 72.1%, #000000 0%, #231900 0.01%, #4D4D4D 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.2), inset 2px 2px 16px rgba(103, 103, 103, 0.6);
+}
+
+body.light .chart-column-item {
+    background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(207, 207, 207, 0.5);
+}
+
+.chart-column-active .chart-column-title {
+    color: var(--text-color-dark1);
+}
+
+body.light .chart-column-active .chart-column-title {
+    color: var(--text-color-light1);
+}
+
+.chart-column-active .chart-column-item {
+    background: radial-gradient(81.14% 100% at 50% 0%, #FFA300 0%, #2D1C00 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.4), inset 0 6px 15px rgba(255, 162, 0, 0.5);
+}
+
+body.light .chart-column-active .chart-column-item {
+    background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(255, 176, 57, 0.8);
+}
+
+.chart-column-value {
+    margin-top: 12px;
+    font-size: 17px;
+}
+
+.chart-column-title {
+    color: var(--text-color-dark2);
+}
+
+.chart-column-title-select {
+    color: var(--text-color-dark1);
+}
+
+.chart-column-value {
+    color: var(--text-color-dark2);
+}
+
+.chart-leaders {
+    display: flex;
+    padding: 14px 30px;
+}
+
+.chart-user {
+    display: flex;
+    flex-direction: row;
+}
+
+.chart-user:last-child {
+    border: 0 !important;
+}
+
+.chart-user_description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.chart-user-img {
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 14px;
+}
+
+.chart-user-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+}
+
+body.light .chart-user-img img {
+    filter: unset;
+}
+
+.chart-user-name {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--text-color-dark1)
+}
+
+body.light .chart-user-name {
+    color: var(--text-color-light1);
+}
+
+.chart-user-text {
+    font-size: 16px;
+    color: var(--text-color-dark2)
+}
+
+body.light .chart-user-text {
+    color: var(--text-color-light2);
+}
+
+@media (max-width: 1400px) {
+    .chart-column {
+        width: 100px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .chart-column-item {
+        box-shadow: inset -3px 3px 3px rgba(255, 255, 255, 0.2), inset 5px 5px 20px rgba(103, 103, 103, 0.6);
+    }
+
+    body.light .chart-column-item {
+        box-shadow: inset -3px 3px 3px rgba(255, 255, 255, 0.5), inset 0 0 25px rgba(207, 207, 207, 0.5);
+    }
+
+    .chart-column-active .chart-column-item {
+        box-shadow: inset -2px 3px 3px rgba(255, 255, 255, 0.4), inset 0 6px 20px rgba(255, 162, 0, 0.5);
+    }
+
+    body.light .chart-column-active .chart-column-item {
+        box-shadow: inset -3px 3px 3px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(255, 176, 57, 0.8);
+    }
+
+    .chart-leaders {
+        display: flex;
+        padding: 24px 40px;
+    }
+}
+
+@media (orientation: portrait) {
+    .chart-leaders .chart-user {
+        padding: 16px 0;
+        border-bottom: 2px solid #31302e;
+    }
+
+    body.light .chart-leaders .chart-user {
+        border-bottom: 2px solid #BFBFBF;
+    }
+
+    .chart-leaders {
+        flex-direction: column;
+    }
+
+    .chart-column:last-child {
+        margin: 0;
+    }
+}
+
+@media (orientation: landscape) {
+    .chart-user {
+        padding: 0 20px;
+        border-right: 2px solid #31302e;
+    }
+
+    body.light .chart-user {
+        border-right: 2px solid #BFBFBF;
+    }
+
+    .chart-leaders {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .chart-column {
+        width: 120px;
+        margin: 10px auto 0 0;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 1200px) {
+    .chart-column {
+        margin: 0 50px 0 0;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1200px) {
+    .chart-column {
+        width: 60px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .chart-user-img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .chart-column {
+        width: 80px;
+    }
+}
+
+@media (orientation: portrait) and (max-width: 700px) {
+    .chart-column {
+        margin: 0 40px 0 0;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 700px) {
+    .chart-column {
+        margin: 10px auto 0 0;
+    }
+}
+
+@media (max-width: 700px) {
+    .chart-user-text {
+        font-size: 14px;
+    }
+
+    .chart-column {
+        width: 40px;
+    }
+
+    .chart-user-img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .chart-user-name {
+        font-size: 16px;
+    }
+
+    .chart-container {
+        padding: 0 24px;
+    }
+
+    .chart-column {
+        min-width: 40px;
+    }
+
+    .chart-column-item {
+        border-radius: 6px;
+        min-height: 8px;
+    }
+
+    .chart-column-item:before {
+        border-radius: 6px;
+    }
+
+    .chart-leaders {
+        padding: 10px 24px;
+    }
+}
+
+@media (max-width: 500px) and (orientation: portrait) {
+    .chart-column {
+        margin: 0 24px 0 0;
+    }
+}
+
+

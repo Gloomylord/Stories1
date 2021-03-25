@@ -1,0 +1,327 @@
+.vote_title {
+    padding: 20px 52px 8px;
+}
+
+.vote_subtitle {
+    padding: 0 52px;
+}
+
+.vote-page {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.vote {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-grow: 3;
+}
+
+.vote-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.vote-side {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
+}
+
+.vote-side > *, .vote-center > * {
+    margin: auto 0 0;
+}
+
+.vote-side > :first-child, .vote-center > :first-child {
+    margin: 0;
+}
+
+.vote_block {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.vote_vertical {
+    justify-content: space-between;
+}
+
+.vote_vertical .vote_block {
+    justify-content: space-between;
+}
+
+.vote_button {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background: transparent;
+    border: 2px solid #fcfbf7;
+    position: relative;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.light .vote_button {
+    border: 2px solid #F4B000;
+}
+
+.vote_button:disabled, .vote_button:hover {
+    border: 2px solid #C4C4C4;
+}
+
+.vote_button:disabled {
+    cursor: unset;
+}
+
+.vote_button:hover {
+    border: 2px solid #C4C4C4;
+}
+
+.vote_button span {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    width: 90%;
+    height: 90%;
+    top: 50%;
+    left: 50%;
+    background-color: #fcfbf7;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+}
+
+body.light .vote_button span {
+    background-color: #F4B000;
+}
+
+.vote_button:disabled span {
+    cursor: unset;
+    background-color: #C4C4C4 !important;
+}
+
+.vote_button:hover span {
+    background-color: #C4C4C4 !important;
+}
+
+.vote_up:before, .vote_up:after, .vote_down:before, .vote_down:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 14px;
+    top: 50%;
+    left: 50%;
+    background-color: #040403;
+    z-index: 5;
+}
+
+body.light .vote_up:before,body.light .vote_up:after,body.light .vote_down:before,body.light .vote_down:after {
+    background-color: #fff;
+}
+
+.vote_up:before {
+    transform-origin: left center;
+    transform: translateY(calc(-8px / 1.4)) rotate(45deg);
+}
+
+.vote_up:after {
+    transform-origin: left center;
+    transform: translateY(calc(-8px / 1.4)) rotate(135deg);
+}
+
+.vote_down:before {
+    transform-origin: left center;
+    transform: translateY(calc(7px / 1.4)) rotate(-45deg);
+}
+
+.vote_down:after {
+    transform-origin: left center;
+    transform: translateY(calc(7px / 1.4)) rotate(-135deg);
+}
+
+.user-container {
+    border-radius: 6px;
+    transition: .2s;
+    padding: 20px 0 16px;
+    min-width: 104px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.user-container {
+    min-width: unset;
+    width: 210px;
+    height: 300px;
+}
+
+.user-img {
+    width: 100px;
+    height: 100px;
+}
+
+.vote_vertical {
+    padding: 50px;
+}
+
+.vote_vertical .vote_block {
+    height: unset;
+    flex-grow: 1;
+}
+
+.vote_vertical .vote-side {
+    flex-direction: column;
+}
+
+.user-container:hover {
+    background: radial-gradient(85.62% 148.33% at 49.85% 100%, rgba(68, 58, 42, 0.7864) 0%, rgba(0, 0, 0, 0.8) 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.2), inset 2px 2px 16px rgba(255, 255, 255, 0.1);
+}
+
+body.light .user-container:hover {
+    background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(207, 207, 207, 0.5);
+}
+
+.selected-user {
+    background: radial-gradient(91.67% 122.17% at 49.17% -11.17%, #FFA300 0%, #2D1C00 100%) !important;
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.4), inset 0 6px 15px rgba(255, 162, 0, 0.4) !important;
+}
+
+body.light .selected-user {
+    background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%) !important;
+    box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(255, 176, 57, 0.8) !important;
+}
+
+.vote_vertical, .vote_horizontal {
+    display: none;
+}
+
+@media (orientation: landscape) {
+    .vote_horizontal {
+        display: flex;
+    }
+    .vote_block > *, .vote .vote-center > * {
+        margin: 0 0 auto;
+    }
+
+    .vote_block > *:first-child, .vote .vote-center > :first-child {
+        margin: auto 0;
+    }
+
+    .vote .emoji {
+        font-size: 40px;
+    }
+
+    .vote .vote_block {
+        justify-content: space-around;
+    }
+
+    .vote > :first-child {
+        margin: 0 auto;
+    }
+
+    .vote > * {
+        margin: 0 auto 0 0;
+    }
+}
+
+@media (orientation: portrait) {
+    .vote_vertical {
+        display: flex;
+    }
+}
+
+@media (max-width: 1200px){
+    .user-container {
+        min-width: unset;
+        width: 160px;
+        height: 250px;
+    }
+
+    .user-img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .emoji {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 700px) {
+    .vote_title {
+        padding: 20px 24px 8px;
+    }
+
+    .vote_subtitle {
+        padding: 0 24px;
+    }
+
+    .vote_vertical {
+        padding: 28px;
+    }
+
+    .user-container {
+        padding: 20px 0 16px;
+        width: 104px;
+        height: unset;
+    }
+
+    .user-img {
+        width: 64px;
+        height: 64px;
+    }
+}
+
+@media (max-width: 600px) {
+    .user-container {
+        padding: 10px 0 5px !important;
+        min-width: unset;
+        width: 94px;
+        height: unset;
+    }
+
+    .emoji {
+        font-size: 28px;
+    }
+
+    .user-img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .vote_vertical {
+        padding: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .user-container {
+        padding: 10px 0 5px;
+    }
+
+    .vote_vertical .user-img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .vote_vertical .user-name {
+        letter-spacing: .3px;
+    }
+
+    .emoji {
+        font-size: 25px;
+    }
+}
