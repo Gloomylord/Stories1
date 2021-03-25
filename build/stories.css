@@ -63,8 +63,9 @@ body.light .dark {
 
 .title {
     color: var(--text-color-dark1);
+    font-family: Roboto-Bold;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 32px;
 }
 
@@ -98,23 +99,23 @@ body.light .dark {
 
 @media (max-width: 1200px) {
     .title {
-        font-size: 25px;
+        font-size: 34px;
         line-height: 28px;
     }
 
     .subtitle {
-        font-size: 17px;
+        font-size: 20px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .title {
-        font-size: 24px;
+        font-size: 29px;
         line-height: 28px;
     }
 
     .subtitle {
-        font-size: 14px;
+        font-size: 16px;
     }
 }
 .activity_column {
@@ -854,7 +855,7 @@ body.light .path-container4 path {
     flex-direction: column;
     align-items: center;
     justify-content: flex-end;
-    height: calc(var(--height) * 100% * .7 + 27px);
+    height: 100%;
     min-height: 50px;
     min-width: 50px;
     align-self: flex-end;
@@ -866,7 +867,7 @@ body.light .path-container4 path {
 }
 
 .chart_subtitle {
-    padding: 0 24px;
+    padding: 0 24px ;
 }
 
 .chart-column-title {
@@ -880,10 +881,10 @@ body.light .chart-column-title {
 }
 
 .chart-column-item {
-    flex-grow: 2;
     min-height: 15px;
     width: 100%;
     border-radius: 6px;
+    height: calc(var(--height) * 100% * .7 - 26px);
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%), radial-gradient(149.08% 93.3% at 38.75% 72.1%, #000000 0%, #231900 0.01%, #4D4D4D 100%);
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.2), inset 2px 2px 16px rgba(103, 103, 103, 0.6);
 }
@@ -1036,7 +1037,7 @@ body.light .chart-user-text {
 
 @media (orientation: landscape) {
     .chart-user {
-        padding: 0 20px;
+        padding: 0 54px 0 21px;
         border-right: 2px solid #31302e;
     }
 
@@ -1051,7 +1052,7 @@ body.light .chart-user-text {
 
     .chart-column {
         width: 120px;
-        margin: 10px auto 0 0;
+        margin: 0 auto 0 0;
     }
 }
 
@@ -1086,7 +1087,10 @@ body.light .chart-user-text {
 
 @media (orientation: landscape) and (max-width: 700px) {
     .chart-column {
-        margin: 10px auto 0 0;
+        margin: 0 auto 0 0;
+    }
+    .chart_title {
+        padding: 22px 24px 19px 24px;
     }
 }
 
@@ -1109,7 +1113,7 @@ body.light .chart-user-text {
     }
 
     .chart-container {
-        padding: 0 24px;
+        padding: 0 58px;
     }
 
     .chart-column {
@@ -1126,7 +1130,7 @@ body.light .chart-user-text {
     }
 
     .chart-leaders {
-        padding: 10px 24px;
+        padding: 23px 24px;
     }
 }
 

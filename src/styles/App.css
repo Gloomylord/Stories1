@@ -63,8 +63,9 @@ body.light .dark {
 
 .title {
     color: var(--text-color-dark1);
+    font-family: Roboto-Bold;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
     line-height: 32px;
 }
 
@@ -98,22 +99,22 @@ body.light .dark {
 
 @media (max-width: 1200px) {
     .title {
-        font-size: 25px;
+        font-size: 34px;
         line-height: 28px;
     }
 
     .subtitle {
-        font-size: 17px;
+        font-size: 20px;
     }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .title {
-        font-size: 24px;
+        font-size: 29px;
         line-height: 28px;
     }
 
     .subtitle {
-        font-size: 14px;
+        font-size: 16px;
     }
 }

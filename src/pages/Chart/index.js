@@ -23,13 +23,13 @@ function Chart({data}) {
             <div className="chart">
                 <div className="chart-container">
                     {
-                        data.values.slice(activeIndex - 5, activeIndex + 3).map((column, index) => {
+                        data.values.slice(activeIndex - 6, activeIndex + 3).map((column, index) => {
                                 return <div key={index} className={cn("chart-column",
                                     {"chart-column-active": column.active}
                                 )} style={{"--height": column.value / maxValue}}>
-                                    <div className="chart-column-title">{column.title}</div>
+                                    <div className="chart-column-title">{column.value}</div>
                                     <div className="chart-column-item"/>
-                                    <div className="chart-column-value">{column.value}</div>
+                                    <div className="chart-column-value">{column.title}</div>
                                 </div>
                             }
                         )

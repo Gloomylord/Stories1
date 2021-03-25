@@ -14,7 +14,7 @@ function App({data}) {
     },[]);
 
     return (
-        <main className={"App"}>
+        <div className={"App"}>
             {alias === "activity" &&
                 <Activity data={data.data}/>
             }
@@ -34,7 +34,7 @@ function App({data}) {
                 alias === "vote" &&
                 <Vote data={data.data}/>
             }
-        </main>
+        </div>
     );
 }
 
