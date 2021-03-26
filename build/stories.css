@@ -829,9 +829,7 @@ body.light .path-container4 path {
 .chart {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
     flex-grow: 2;
-    padding: 0 58px;
     position: relative;
 }
 
@@ -847,7 +845,7 @@ body.light .path-container4 path {
 }
 
 .chart-container > :last-child {
-    margin: 10px 0 0;
+    margin: 0;
 }
 
 .chart-column {
@@ -931,7 +929,7 @@ body.light .chart-column-active .chart-column-item {
 
 .chart-leaders {
     display: flex;
-    padding: 14px 30px;
+    padding: 24px 40px;
 }
 
 .chart-user {
@@ -1009,11 +1007,6 @@ body.light .chart-user-text {
     body.light .chart-column-active .chart-column-item {
         box-shadow: inset -3px 3px 3px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(255, 176, 57, 0.8);
     }
-
-    .chart-leaders {
-        display: flex;
-        padding: 24px 40px;
-    }
 }
 
 @media (orientation: portrait) {
@@ -1059,6 +1052,12 @@ body.light .chart-user-text {
 @media (orientation: portrait) and (max-width: 1200px) {
     .chart-column {
         margin: 0 50px 0 0;
+    }
+}
+
+@media (orientation: landscape) and (max-width: 1400px) {
+    .chart-column {
+        width: 100px;
     }
 }
 
