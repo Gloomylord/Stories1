@@ -28,6 +28,7 @@ function Leaders({data}) {
                         return <div className={cn("leaders-column", {"leaders-column-top": i === 0})}
                                     key={user.id}
                                     style={{
+                                        "--j": Math.ceil(i / 2),
                                         "--i": i,
                                         order: arrOrder[i],
                                         zIndex: 5 - Math.abs(3 - arrOrder[i])

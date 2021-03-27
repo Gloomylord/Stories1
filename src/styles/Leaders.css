@@ -66,7 +66,7 @@ body.light .user-column {
 
 .user-place {
     color: var(--text-color-dark1);
-    font-size: 25px;
+    font-size: 38px;
     font-weight: 500;
     margin-top: 18px;
     margin-bottom: auto;
@@ -126,7 +126,7 @@ body.light .selected-user-place {
     }
 
     .leaders-column {
-        height: calc((1 - var(--i) * 0.05) * 100% * .9);
+        height: calc((1 - var(--j) * 0.1) * 100% * .9);
     }
 
     .leaders {
@@ -139,6 +139,9 @@ body.light .selected-user-place {
     .leaders {
         padding: 26px 66px 0;
     }
+    .leaders-page .title {
+        padding: 22px 24px 8px 24px;
+    }
 }
 
 @media (max-width: 600px) and (orientation: landscape) {
@@ -146,9 +149,6 @@ body.light .selected-user-place {
         padding: 20px 24px 0;
     }
 
-    .chart_title.title {
-        padding: 20px 24px 10px;
-    }
 }
 
 @media (orientation: portrait) {
@@ -181,7 +181,7 @@ body.light .selected-user-place {
 
     .user-place {
         color: var(--text-color-dark1);
-        font-size: 18px;
+        font-size: 32px;
         margin-top: 10px;
         text-align: center;
     }
