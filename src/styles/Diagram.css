@@ -273,8 +273,15 @@ body.light .path-container4 path {
         padding: 25px 0;
     }
 
+    .diagram-container {
+        width: 50%;
+    }
     .diagram-list {
-        padding: 0 24px;
+        width: 50%;
+    }
+
+    .diagram-list {
+        padding: 0 24px 0 0;
     }
 }
 
