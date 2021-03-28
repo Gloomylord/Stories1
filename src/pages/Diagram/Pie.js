@@ -8,7 +8,7 @@ const usage = (d) => d.usage;
 
 const defaultMargin = {top: 20, right: 20, bottom: 20, left: 20};
 
-export default function CustomPie({width, height, margin = defaultMargin, animate = true, data}) {
+export default function CustomPie({width, height, margin = defaultMargin, data}) {
     const innerWidth = width - margin.left - margin.right;
     const innerHeight = height - margin.top - margin.bottom;
     const radius = Math.min(innerWidth, innerHeight) / 2;

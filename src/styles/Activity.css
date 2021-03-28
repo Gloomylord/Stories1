@@ -246,7 +246,7 @@ body.light .activity_data_fifth-interval {
     }
 
     .ratio {
-        margin: auto 0 0 !important;
+        margin: auto 0 40px !important;
         max-width: calc((100vh - 230px) / .29);
     }
 
@@ -257,7 +257,7 @@ body.light .activity_data_fifth-interval {
     .activity_data {
         width: 70%;
         margin: 0 0 auto;
-        padding: 60px 24px 0;
+        padding: 0 24px 20px;
     }
 }
 
@@ -283,7 +283,7 @@ body.light .activity_data_fifth-interval {
 
 @media (min-width: 700px) {
     .activity_title {
-        padding: 30px 24px 19px 24px;
+        padding:22px 24px 12px 24px;
     }
 
     .activity_subtitle {
@@ -292,6 +292,10 @@ body.light .activity_data_fifth-interval {
 
     .activity_data_text {
         font-size: 20px;
+    }
+
+    .activity_data {
+        width: 57%;
     }
 
     .activity_data_interval {

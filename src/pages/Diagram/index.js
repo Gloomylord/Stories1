@@ -12,8 +12,8 @@ function Diagram({data}) {
                 <div className="diagram-container">
                     <div className='diagram-ratio'>
                         <div className="diagram-ratio-inner">
-                            <CustomPie width={500} height={500} data={data} animate={false}/>
-                            <svg className="diagram" viewBox="0 0 500 500" width="100%" height="100%">
+                            <CustomPie width={400} height={400} data={data}/>
+                            <svg className="diagram" viewBox="0 0 400 400" width="100%" height="100%">
                                 <use xlinkHref="#diagram-link"/>
                             </svg>
                         </div>
