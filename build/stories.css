@@ -1168,7 +1168,7 @@ body.light .chart-user-text {
 
 .emoji {
     position: absolute;
-    top: -3px;
+    top: -5px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 32px;
@@ -1192,7 +1192,7 @@ body.light .chart-user-text {
     font-size: 20px;
     color: var(--text-color-dark1);
     text-align: center;
-    margin: 4px 0;
+    margin: 3px 0;
     font-style: normal;
     font-weight: 500;
     line-height: calc(1em + 2px);
@@ -1441,9 +1441,11 @@ body.light .selected-user-place {
     display: none;
     flex-direction: row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: space-around;
     flex-grow: 3;
 }
+
+
 
 .vote-center {
     display: flex;
@@ -1458,10 +1460,6 @@ body.light .selected-user-place {
     flex-direction: row;
     align-items: center;
     height: 100%;
-}
-
-.vote-side > *, .vote-center > * {
-    margin: auto 0 0;
 }
 
 .vote-side > :first-child, .vote-center > :first-child {
@@ -1632,6 +1630,7 @@ body.light .selected-user {
     .vote_horizontal {
         display: flex;
     }
+
     .vote_block > *, .vote .vote-center > * {
         margin: 0 0 auto;
     }
@@ -1646,14 +1645,6 @@ body.light .selected-user {
 
     .vote .vote_block {
         justify-content: space-around;
-    }
-
-    .vote > :first-child {
-        margin: 0 auto;
-    }
-
-    .vote > * {
-        margin: 0 auto 0 0;
     }
 }
 
@@ -1702,6 +1693,10 @@ body.light .selected-user {
     .user-img {
         width: 64px;
         height: 64px;
+    }
+
+    .vote_horizontal .vote-center {
+        width: 104px;
     }
 }
 

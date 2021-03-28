@@ -15,7 +15,7 @@
 
 .emoji {
     position: absolute;
-    top: -3px;
+    top: -5px;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 32px;
@@ -39,7 +39,7 @@
     font-size: 20px;
     color: var(--text-color-dark1);
     text-align: center;
-    margin: 4px 0;
+    margin: 3px 0;
     font-style: normal;
     font-weight: 500;
     line-height: calc(1em + 2px);
