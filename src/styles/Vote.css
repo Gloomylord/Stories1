@@ -202,10 +202,11 @@ body.light .selected-user {
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(255, 176, 57, 0.8) !important;
 }
 
-@media (orientation: landscape) {
-    .vote_horizontal {
-        display: flex;
-    }
+.vote_horizontal {
+    display: flex;
+}
+
+
 
     .vote_block > *, .vote .vote-center > * {
         margin: 0 0 auto;
@@ -222,7 +223,7 @@ body.light .selected-user {
     .vote .vote_block {
         justify-content: space-around;
     }
-}
+
 
 @media (orientation: portrait) {
     .vote_vertical {
