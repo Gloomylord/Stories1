@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React from "react";
 import '../styles/App.css';
 import Activity from "./Activity";
 import Diagram from "./Diagram";
@@ -6,33 +6,29 @@ import Chart from "./Chart";
 import Leaders from "./Leaders";
 import Vote from "./Vote";
 
-function App({data}) {
-    const {alias} = data;
-
-    useEffect(()=> {
-        document.title = alias[0].toUpperCase() + alias.slice(1);
-    },[]);
+function App(props) {
+    const {alias, data} = props.data;
 
     return (
-        <div className={"App"}>
+        <div className="App">
             {alias === "activity" &&
-                <Activity data={data.data}/>
+                <Activity data={data}/>
             }
             {
                 alias === "diagram" &&
-                <Diagram data={data.data}/>
+                <Diagram data={data}/>
             }
             {
                 alias === "chart" &&
-                <Chart data={data.data}/>
+                <Chart data={data}/>
             }
             {
                 alias === "leaders" &&
-                <Leaders data={data.data}/>
+                <Leaders data={data}/>
             }
             {
                 alias === "vote" &&
-                <Vote data={data.data}/>
+                <Vote data={data}/>
             }
         </div>
     );

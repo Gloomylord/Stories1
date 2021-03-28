@@ -3,7 +3,7 @@
 }
 
 .vote_subtitle {
-    padding: 0 52px;
+    padding: 0 52px 3px;
 }
 
 .vote-page {
@@ -14,7 +14,7 @@
 }
 
 .vote {
-    display: flex;
+    display: none;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
@@ -204,10 +204,6 @@ body.light .selected-user {
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(255, 176, 57, 0.8) !important;
 }
 
-.vote_vertical, .vote_horizontal {
-    display: none;
-}
-
 @media (orientation: landscape) {
     .vote_horizontal {
         display: flex;
@@ -220,7 +216,7 @@ body.light .selected-user {
         margin: auto 0;
     }
 
-    .vote .emoji {
+    .emoji {
         font-size: 40px;
     }
 
@@ -266,11 +262,11 @@ body.light .selected-user {
     }
 
     .vote_subtitle {
-        padding: 0 24px;
+        padding: 0 24px 3px;
     }
 
     .vote_vertical {
-        padding: 28px;
+        padding: 20px 5px;
     }
 
     .user-container {
@@ -287,28 +283,17 @@ body.light .selected-user {
 
 @media (max-width: 600px) {
     .user-container {
-        padding: 10px 0 5px !important;
-        min-width: unset;
-        width: 94px;
         height: unset;
     }
 
     .emoji {
         font-size: 28px;
     }
-
-    .user-img {
-        width: 55px;
-        height: 55px;
-    }
-
-    .vote_vertical {
-        padding: 14px;
-    }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 350px) {
     .user-container {
+        width: 94px;
         padding: 10px 0 5px;
     }
 

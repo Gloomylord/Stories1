@@ -41,11 +41,11 @@ function Chart({data}) {
                     data.users.slice(0, -1).map((user) =>
                         <div key={user.id} className="chart-user">
                             <div className="chart-user-img">
-                                <img src={'assets/images/1x/' + user.avatar} alt="avatar"
-                                     srcSet={`assets/images/1x/${user.avatar} 500w,
-                         assets/images/2x/${user.avatar} 900w,
-                         assets/images/3x/${user.avatar} 1000w,
-                         assets/images/4x/${user.avatar} 1400w,`}
+                                <img src={'/assets/images/1x/' + user.avatar} alt="avatar"
+                                     srcSet={`/assets/images/1x/${user.avatar} 500w,
+                         /assets/images/2x/${user.avatar} 900w,
+                         /assets/images/3x/${user.avatar} 1000w,
+                         /assets/images/4x/${user.avatar} 1400w,`}
                                 />
                             </div>
                             <div className="chart-user_description">

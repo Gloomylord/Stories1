@@ -2,7 +2,8 @@ import React from "react";
 import cn from "classnames";
 import UserData from "../../components/UserData";
 
-function User({user, selectedUserId, emoji}) {
+function User({user, selectedUserId}) {
+    const emoji = "👍";
     return (
         <>
             {user &&
@@ -12,7 +13,6 @@ function User({user, selectedUserId, emoji}) {
                  data-action="update"
                  data-params={`{"alias": "leaders","data": {selectedUserId: ${user.id}}`}
             >
-
                 <UserData data={user} emoji={selectedUserId === user.id && emoji}/>
             </div>
             }
