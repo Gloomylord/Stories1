@@ -20,6 +20,6 @@ const value = getUrlVars().slide - 1;
 const index = value < 11 && value >= 0 ? value : 0;
 
 const theme =  getUrlVars().theme;
-if (theme === "dark" || theme === "light") document.body.classList.add(theme);
+if (theme === "dark" || theme === "light") document.body.classList.add("theme_" + theme);
 
 ReactDOM.render(<App data={data[index]}/>, document.getElementById("root"));

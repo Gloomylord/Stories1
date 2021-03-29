@@ -31,7 +31,7 @@
     filter: grayscale(100%);
 }
 
-.light .user-img img{
+body.theme_light .user-img img{
     filter: unset;
 }
 
@@ -46,7 +46,7 @@
     padding: 0 4px;
 }
 
-body.light .user-name {
+body.theme_light .user-name {
     color: var(--text-color-light1);
 }
 
@@ -56,7 +56,7 @@ body.light .user-name {
     text-align: center;
 }
 
-body.light .user-text {
+body.theme_light .user-text {
     color: var(--text-color-light2);
 }
 

@@ -39,7 +39,7 @@
     font-size: 22px;
 }
 
-body.light .diagram_text {
+body.theme_light .diagram_text {
     text-align: center;
     color: var(--text-color-light1);
 }
@@ -49,7 +49,7 @@ body.light .diagram_text {
     font-weight: 500;
 }
 
-body.light .diagram_text :nth-child(3), body.light .diagram_text :nth-child(4) {
+body.theme_light .diagram_text :nth-child(3), body.light .diagram_text :nth-child(4) {
     color: var(--text-color-light2);
 }
 
@@ -122,7 +122,7 @@ body.light .diagram_text :nth-child(3), body.light .diagram_text :nth-child(4) {
     border-bottom: 2px solid #32302d;
 }
 
-body.light .diagram-list-item {
+body.theme_light .diagram-list-item {
     border-bottom: 2px solid var(--text-color-light2);
 }
 
@@ -134,7 +134,7 @@ body.light .diagram-list-item {
     color: var(--text-color-dark1);
 }
 
-body.light .diagram-list-item {
+body.theme_light .diagram-list-item {
     color: var(--text-color-light1);
 }
 
@@ -148,7 +148,7 @@ body.light .diagram-list-item {
     color: var(--text-color-dark2);
 }
 
-body.light .diagram-list-second-content {
+body.theme_light .diagram-list-second-content {
     color: var(--text-color-light2);
 }
 
@@ -164,7 +164,7 @@ body.light .diagram-list-second-content {
     box-shadow: 0 0 20px -8px rgba(248, 158, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(255, 162, 0, 0.9);
 }
 
-body.light .diagram-list-icon-1 {
+body.theme_light .diagram-list-icon-1 {
     background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.56) 81.25%, rgba(255, 239, 153, 0.32) 100%);
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0px 0px 20px rgba(255, 176, 57, 0.9);
 }
@@ -174,7 +174,7 @@ body.light .diagram-list-icon-1 {
     box-shadow: 0 0 20px -8px rgba(147, 93, 0, 0.2), inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(202, 129, 0, 0.9);
 }
 
-body.light .diagram-list-icon-2 {
+body.theme_light .diagram-list-icon-2 {
     background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(255, 184, 0, 0.24) 81.25%, rgba(255, 239, 153, 0.12) 100%);
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(255, 176, 57, 0.4);
 }
@@ -184,7 +184,7 @@ body.light .diagram-list-icon-2 {
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 
-body.light .diagram-list-icon-3 {
+body.theme_light .diagram-list-icon-3 {
     background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(166, 166, 166, 0.1725) 82.81%, rgba(203, 203, 203, 0.05) 92.19%);
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(105, 105, 105, 0.2);
 }
@@ -194,7 +194,7 @@ body.light .diagram-list-icon-3 {
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5);
 }
 
-body.light .diagram-list-icon-4 {
+body.theme_light .diagram-list-icon-4 {
     background: radial-gradient(49.84% 49.84% at 49.84% 50.16%, rgba(191, 191, 191, 0.345) 82.81%, rgba(228, 228, 228, 0.1) 92.19%);
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(131, 131, 131, 0.6);
 }
@@ -223,25 +223,25 @@ body.light .diagram-list-icon-4 {
     fill-opacity: .5;
 }
 
-body.light .path-container1 path {
+body.theme_light .path-container1 path {
     fill: url(#RadialGradientLight1);
     filter: url(#shadowLight1);
     fill-opacity: .8;
 }
 
-body.light .path-container2 path {
+body.theme_light .path-container2 path {
     fill: url(#RadialGradientLight2);
     filter: url(#shadowLight2);
     fill-opacity: .6;
 }
 
-body.light .path-container3 path {
+body.theme_light .path-container3 path {
     fill: url(#RadialGradientLight3);
     filter: url(#shadowLight3);
     fill-opacity: 0.3;
 }
 
-body.light .path-container4 path {
+body.theme_light .path-container4 path {
     filter: url(#shadowLight4);
     fill: url(#RadialGradientLight4);
     fill-opacity: 0.5;

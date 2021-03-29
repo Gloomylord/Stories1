@@ -53,7 +53,7 @@
     font-size: 20px;
 }
 
-body.light .chart-column-title {
+body.theme_light .chart-column-title {
     color: var(--text-color-light2);
 }
 
@@ -66,7 +66,7 @@ body.light .chart-column-title {
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.2), inset 2px 2px 16px rgba(103, 103, 103, 0.6);
 }
 
-body.light .chart-column-item {
+body.theme_light .chart-column-item {
     background: linear-gradient(180deg, rgba(244, 244, 244, 0.9) 0.82%, #E9E9E9 100%, rgba(234, 234, 234, 0) 100%);
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(207, 207, 207, 0.5);
 }
@@ -75,7 +75,7 @@ body.light .chart-column-item {
     color: var(--text-color-dark1);
 }
 
-body.light .chart-column-active .chart-column-title {
+body.theme_light .chart-column-active .chart-column-title {
     color: var(--text-color-light1);
 }
 
@@ -84,7 +84,7 @@ body.light .chart-column-active .chart-column-title {
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.4), inset 0 6px 15px rgba(255, 162, 0, 0.5);
 }
 
-body.light .chart-column-active .chart-column-item {
+body.theme_light .chart-column-active .chart-column-item {
     background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(255, 176, 57, 0.8);
 }
@@ -141,7 +141,7 @@ body.light .chart-column-active .chart-column-item {
     filter: grayscale(100%);
 }
 
-body.light .chart-user-img img {
+body.theme_light .chart-user-img img {
     filter: unset;
 }
 
@@ -151,7 +151,7 @@ body.light .chart-user-img img {
     color: var(--text-color-dark1)
 }
 
-body.light .chart-user-name {
+body.theme_light .chart-user-name {
     color: var(--text-color-light1);
 }
 
@@ -160,7 +160,7 @@ body.light .chart-user-name {
     color: var(--text-color-dark2)
 }
 
-body.light .chart-user-text {
+body.theme_light .chart-user-text {
     color: var(--text-color-light2);
 }
 
@@ -175,7 +175,7 @@ body.light .chart-user-text {
         box-shadow: inset -3px 3px 3px rgba(255, 255, 255, 0.2), inset 5px 5px 20px rgba(103, 103, 103, 0.6);
     }
 
-    body.light .chart-column-item {
+    body.theme_light .chart-column-item {
         box-shadow: inset -3px 3px 3px rgba(255, 255, 255, 0.5), inset 0 0 25px rgba(207, 207, 207, 0.5);
     }
 
@@ -183,7 +183,7 @@ body.light .chart-user-text {
         box-shadow: inset -2px 3px 3px rgba(255, 255, 255, 0.4), inset 0 6px 20px rgba(255, 162, 0, 0.5);
     }
 
-    body.light .chart-column-active .chart-column-item {
+    body.theme_light .chart-column-active .chart-column-item {
         box-shadow: inset -3px 3px 3px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(255, 176, 57, 0.8);
     }
 }
@@ -194,7 +194,7 @@ body.light .chart-user-text {
         border-bottom: 2px solid #31302e;
     }
 
-    body.light .chart-leaders .chart-user {
+    body.theme_light .chart-leaders .chart-user {
         border-bottom: 2px solid #BFBFBF;
     }
 
@@ -213,7 +213,7 @@ body.light .chart-user-text {
         border-right: 2px solid #31302e;
     }
 
-    body.light .chart-user {
+    body.theme_light .chart-user {
         border-right: 2px solid #BFBFBF;
     }
 

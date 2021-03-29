@@ -47,16 +47,16 @@ html, body {
     background: radial-gradient(70.24% 70.24% at 49.87% 29.76%, rgba(18, 12, 1, 0.9) 0%, #000000 100%);
 }
 
-.light .App {
+body.theme_light .App {
     background: #FFFFFF;
 }
 
-body.dark .light {
+body.dark .theme_light {
     visibility: hidden;
     display: none;
 }
 
-body.light .dark {
+body.theme_light .dark {
     visibility: hidden;
     display: none;
 }
@@ -69,7 +69,7 @@ body.light .dark {
     line-height: 32px;
 }
 
-.light .title {
+body.theme_light .title {
     color: var(--text-color-light1);
 }
 
@@ -80,7 +80,7 @@ body.light .dark {
     line-height: 18px;
 }
 
-.light .subtitle {
+body.theme_light .subtitle {
     color: var(--text-color-light2);
 }
 

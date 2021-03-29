@@ -73,7 +73,7 @@ body.light .user-column {
     text-align: center;
 }
 
-body.light .user-place {
+body.theme_light .user-place {
     color: var(--text-color-light1);
 }
 
@@ -82,7 +82,7 @@ body.light .user-place {
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.4), inset 0 6px 15px rgba(255, 162, 0, 0.4);
 }
 
-body.light .leaders-column-top .user-column {
+body.theme_light .leaders-column-top .user-column {
     background: linear-gradient(180deg, #FFF2D1 0.82%, #FFD66C 100%);
     box-shadow: inset -1px 1px 1px rgba(255, 255, 255, 0.5), inset 0 0 20px rgba(255, 176, 57, 0.8);
 }
@@ -95,7 +95,7 @@ body.light .leaders-column-top .user-column {
     color: var(--text-color-dark1);
 }
 
-body.light .user-column .user-text {
+body.theme_light .user-column .user-text {
     color: var(--text-color-light1);
 }
 
@@ -109,7 +109,7 @@ body.light .user-column .user-text {
     border-top: 2px solid #918f8a;
 }
 
-body.light .selected-user-place {
+body.theme_light .selected-user-place {
     color: var(--text-color-light1);
 }
 

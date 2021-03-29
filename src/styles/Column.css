@@ -28,7 +28,7 @@
     visibility: hidden;
 }
 
-body.light .light {
+body.theme_light .light {
     visibility: unset !important;
     display: block !important;
 }
